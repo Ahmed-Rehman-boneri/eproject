@@ -122,22 +122,22 @@ const button = document.getElementById('snowmanButton');
 
 
 
-        const ageCategorySwiper = new Swiper('.age-category-swiper', {
+        const ageSwiper = new Swiper('.age_swiper', {
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
             },
             autoplay: {
-                delay: 3000, // Time in milliseconds between slide changes
-                disableOnInteraction: true, // Keeps autoplay running even after user interaction
+                delay: 3000,
+                disableOnInteraction: false,
             },
             slidesPerView: 1,
-            spaceBetween: 30, // Optional: Space between slides
+            spaceBetween: 30,
             breakpoints: {
                 768: {
                     slidesPerView: 2,
-                    spaceBetween: 30,
+                    spaceBetween: 70,
                 },
                 1024: {
                     slidesPerView: 4,
@@ -148,9 +148,6 @@ const button = document.getElementById('snowmanButton');
                 },
             },
         });
-
-
-
 
 
 
