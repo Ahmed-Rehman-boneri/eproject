@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navigation Bar with Search Box</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./media.css">
     <!-- Unicons CSS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
@@ -16,13 +15,15 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./epro.css">
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
     <!-- Nav -->
-    <nav class="nav">
+    <nav class="nav px-5">
         <a href="#" class="logo">Toyotoys</a>
         <i class="uil uil-bars navOpenBtn"></i>
 
@@ -30,22 +31,22 @@
             <i class="uil uil-times navCloseBtn"></i>
             <li><a href="#">Home</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="./epro.html">Products</a></li>
+            <li><a href="#about">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-
-
     </nav>
 
 
 
 
 
+    <!-- banner -->
 
     <div class=" banner">
 
-        <!-- banner -->
+        <!-- BannerCotent -->
+
         <div class="rotation-container">
             <div class="rotation-item visible">
                 <p>SEASONAL SALE - UP TO 60% OFF</p>
@@ -68,7 +69,7 @@
         </div>
 
 
-        <!-- carousel -->
+        <!-- banner carousel -->
         <div class="carousel">
             <div class="carousel__item active">
                 <img src="./images/BANNER1.webp" alt="Pink Bunny Teddy">
@@ -81,21 +82,19 @@
             </div>
         </div>
 
-        <!--   -->
+
 
 
     </div>
 
-    <!-- slider -->
+    <!-- shop by slider -->
 
     <div class="container-fluid px-5">
         <h2 class="client-header align-center">Shop by Category</h2>
         <div class="client-container">
-            <!-- <p class="client-subheader">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
-          velit</p> -->
-            <!-- Swiper -->
             <div class="swiper client-swiper">
                 <div class="swiper-wrapper client-swiper-wrapper">
+
                     <!-- Client Slide -->
                     <div class="swiper-slide client-swiper-slide">
                         <img src="./images/swiper1.webp" alt="Client" class="client-image">
@@ -127,7 +126,7 @@
                     <div class="swiper-slide client-swiper-slide">
                         <img src="./images/swiper5.webp" alt="Client" class="client-image">
                     </div>
-                    <!-- Add more slides as needed -->
+
                 </div>
                 <!-- Pagination -->
                 <div class="swiper-pagination client-swiper-pagination" style="margin-top: 20px; "></div>
@@ -136,35 +135,34 @@
     </div>
 
 
-    <!-- section 3 -->
+    <!-- background with cards -->
 
     <div class="section3Container">
-        <img src="https://toytime-theme.myshopify.com/cdn/shop/files/Rectangle_7.jpg?v=1707907252&width=2000" id="section3img" alt="">
-    
+        <img src="https://toytime-theme.myshopify.com/cdn/shop/files/Rectangle_7.jpg?v=1707907252&width=2000"
+            id="section3img" alt="">
+
         <div class="dot-button " id="snowmanButton" style="position: absolute;bottom: 200px;right: 30vw;">
             <span class="ping"></span>
-            <div class="card ">
-                <img src="https://toytime-theme.myshopify.com/cdn/shop/files/Rectangle_7.jpg?v=1707907252&width=2000" alt="Snow Man">
+            <div class="card2">
+                <img src="https://toytime-theme.myshopify.com/cdn/shop/files/Rectangle_7.jpg?v=1707907252&width=2000"
+                    alt="Snow Man">
                 <h3>Snow Man</h3>
                 <p>Rs. 620.00</p>
             </div>
         </div>
-        
-    
+
+
         <div class="dot-button1 " id="snowmanButton1" style="position: absolute;top: 200px;right: 50vw;">
             <span class="ping"></span>
             <div class="card1 ">
-                <img src="https://toytime-theme.myshopify.com/cdn/shop/files/Rectangle_7.jpg?v=1707907252&width=2000" alt="Snow Man">
+                <img src="https://toytime-theme.myshopify.com/cdn/shop/files/Rectangle_7.jpg?v=1707907252&width=2000"
+                    alt="Snow Man">
                 <h3>Snow Man</h3>
                 <p>Rs. 620.00</p>
             </div>
         </div>
 
     </div>
-
-
-
-
 
     <!-- age catagory swiper -->
 
@@ -182,35 +180,334 @@
                     </div>
                     <div class="swiper-slide age_swiper-slide" style="background-color: rgb(150, 182, 150);">
                         <h3>1 - 2</h3>
-                        <p>Year</p>
+                        <p>Years</p>
                     </div>
                     <div class="swiper-slide age_swiper-slide" style="background-color: rgb(231, 236, 179);">
                         <h3>3 +</h3>
-                        <p>month</p>
+                        <p>Years</p>
                     </div>
                     <div class="swiper-slide age_swiper-slide" style="background-color: rgb(165, 233, 218);">
                         <h3>5 +</h3>
-                        <p>month</p>
+                        <p>Years</p>
                     </div>
                     <div class="swiper-slide age_swiper-slide" style="background-color: rgb(169, 212, 247);">
                         <h3>10 +</h3>
-                        <p>month</p>
+                        <p>Years</p>
                     </div>
                 </div>
                 <div class="swiper-pagination age_swiper-pagination" style="margin-top: 20px;"></div>
             </div>
         </div>
     </div>
-  
 
 
+    <!-- child banner -->
+
+
+    <div class="container py-5 my-5" id="about">
+        <div class="row gap-5">
+            <h1 class="child_heading">About US</h1>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <div class="image-container">
+                    <img src="./images/child.webp" alt="Girl with a toy" class="img-fluid">
+                    <!-- <div class="image-bg"></div> -->
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2 class="mb-4">The Unique Appeal Of Toy Time Toys & Games</h2>
+                <div class="feature-card mb-3">
+                    <div class="row g-0">
+                        <div class="col-2 d-flex justify-content-center align-items-center">
+                            <img src="./images/child1.avif" alt="Exclusive Toy Collections" class="feature-icon">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Exclusive Toy Collections</h5>
+                                <p class="card-text">Enim diam vulputate ut pharetra. Adipiscing elit pellentesque
+                                    habitant morbi tristique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card mb-3">
+                    <div class="row g-0">
+                        <div class="col-2 d-flex justify-content-center align-items-center">
+                            <img src="./images/child2.png" alt="Extensive Toy Assortment" class="feature-icon">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Extensive Toy Assortment</h5>
+                                <p class="card-text">Viverra maecenas accumsan lacus vel. Sed viverra ipsum nunc aliquet
+                                    bibendum enim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="row g-0">
+                        <div class="col-2 d-flex justify-content-center align-items-center">
+                            <img src="./images/child3.webp" alt="Complimentary Shipping" class="feature-icon">
+                        </div>
+                        <div class="col-10">
+                            <div class="card-body">
+                                <h5 class="card-title">Complimentary Shipping</h5>
+                                <p class="card-text">Nibh praesent tristique magna sit amet. Lorem ipsum is simply dummy
+                                    text printing typesetting industry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cards -->
+     <div class="card_content my-5">
+
+    <h1 class="card_heading">New Arrivals
+    </h1>
+    <p class="card_para">Cras dictum metus in uam vulpu commodo. </p>
+    <div class="card-container px-5">
+        
+        <div class="card">
+            <img src="./images/shop-11_52f1abd5-94da-42a3-9410-c3ada8438271.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Stuffed Boy Doll </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-17_72a003e3-9e8c-411e-9b11-5c56045e0820.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Baby Owl </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-15_e66658cb-ac07-402f-9f86-554f45c3076a.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Deer Doll </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-7_a226c59c-0420-482f-a227-3095e07ecca8.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Pigky Bank </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-3_41a52c50-e906-4a98-9ff3-4d48bf9b5387.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Grey Moon </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-11_52f1abd5-94da-42a3-9410-c3ada8438271.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Stuffed Boy Doll </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-11_52f1abd5-94da-42a3-9410-c3ada8438271.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Stuffed Boy Doll </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-11_52f1abd5-94da-42a3-9410-c3ada8438271.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Stuffed Boy Doll </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="./images/shop-11_52f1abd5-94da-42a3-9410-c3ada8438271.webp" alt="Product Image">
+            <div class="card-content">
+                <h2>Stuffed Boy Doll </h2>
+                <p class="price">Rs. 450.00</p>
+                <div class="button-container">
+                    <button id="color1"></button>
+                    <button id="color2"></button>
+                    <button id="color3"></button>
+                </div>
+            </div>
 
-    
+        </div>
+    </div>
+</div>
 
 
+    <!-- footer -->
+     <footer class="footer pt-5">
+        <div class="footer-section" id="secOne">
+            <h1>Get in touch with us </h1>
 
-    
+            <div class="form-container">
+                <form action="mailto:contact@example.com" method="post" enctype="text/plain">
+                    <input type="email" id="email" name="email" placeholder="enter your mail here" required>
+                    <button type="submit">Send Email</button>
+                </form>
+            </div>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula.</p>
+        </div>
+        <div class="footer-section" id="secTwo">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section" id="secThree">
+            <h2>Contact Us</h2>
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div class="footer-section social" id="secFour">
+            <h2>Follow Us</h2>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Twitter</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
 
 
 
@@ -303,7 +600,17 @@
 
 
 
-       
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -97,16 +97,16 @@ setInterval(rotateCarousel, 6000);
 
 
 const button = document.getElementById('snowmanButton');
-        const card = button.querySelector('.card');
+        const card2 = button.querySelector('.card2');
         const button1 = document.getElementById('snowmanButton1')
         const card1 = button1.querySelector('.card1');
 
         button.addEventListener('mouseenter', () => {
-            card.style.display = 'block';
+            card2.style.display = 'block';
         });
 
         button.addEventListener('mouseleave', () => {
-            card.style.display = 'none';
+            card2.style.display = 'none';
         });
         button1.addEventListener('mouseenter', () => {
             card1.style.display = 'block';
