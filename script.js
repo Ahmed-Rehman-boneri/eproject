@@ -130,24 +130,27 @@ const button = document.getElementById('snowmanButton');
             },
             autoplay: {
                 delay: 3000,
-                disableOnInteraction: false,
+                disableOnInteraction: true,
             },
             slidesPerView: 1,
             spaceBetween: 30,
             breakpoints: {
                 768: {
-                    slidesPerView: 2,
-                    spaceBetween: 70,
+                    slidesPerView: 3,
+                    // spaceBetween: 40,
                 },
                 1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-                1280: {
                     slidesPerView: 5,
+                    // spaceBetween: 40,
                 },
+                // 1280: {
+                //     slidesPerView: 5,
+                // },
             },
         });
+
+
+
 
 
 
